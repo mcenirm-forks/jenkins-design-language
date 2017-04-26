@@ -1,4 +1,4 @@
-node {
+node('docker') {
     stage "Prepare environment"
         checkout scm
         def environment  = docker.build 'cloudbees-node'
